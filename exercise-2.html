@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Exercise 2</title>
+</head>
+<body>
+    <div class="title">
+        <h3>Puedes llevar hasta 10 stickers en total (combinalas como quieras)</h3>
+    </div>
+    <div class="exercise-2">
+        <div class="stickers">
+            <div class="sticker-card">
+                <img class="sticker-img" src="assets/img/exercise-2/saitama-3.jpg" alt="">
+                <div class="sticker-info">
+                    <input id="sticker-1" type="number" min="0" max="10">
+                </div>
+            </div>
+        </div>
+        <div class="stickers">
+            <div class="sticker-card">
+                <img class="sticker-img" src="assets/img/exercise-2/saitama-2.jpg" alt="">
+                <div class="sticker-info">
+                    <input id="sticker-2" type="number" min="0" max="10">
+                </div>
+            </div>
+        </div>
+        <div class="stickers">
+            <div class="sticker-card">
+                <img class="sticker-img" src="assets/img/exercise-2/saitama-1.jpg" alt="">
+                <div class="sticker-info">
+                    <input id="sticker-3" type="number" min="0" max="10">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="information">
+        <p id="info"></p>
+        <button onclick="
+            let info = document.querySelector('#info');
+            let qty1 = Number(document.querySelector('#sticker-1').value);
+            let qty2 = Number(document.querySelector('#sticker-2').value);
+            let qty3 = Number(document.querySelector('#sticker-3').value);
+            
+            let suma = qty1 + qty2 + qty3;
+
+            if (suma >= 1 && suma <= 10) {
+                info.innerHTML = String('Tienes ' + suma + ' stickers seleccionados');
+            } else if (suma == 0) {
+                info.innerHTML = 'No tienes stickers seleccionadas'
+            } else {
+                let remove = suma - 10;
+                info.innerHTML = String('Tienes demasiados stickers, debes remover ' + remove + ' para poder procesar tu compra');
+            }
+
+            console.log(suma)
+
+        ">Verificar</button>
+    </div>
+</body>
+</html>
