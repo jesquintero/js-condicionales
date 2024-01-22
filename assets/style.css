@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav1 {
+    grid-area: nav1;
+    min-width: 100%;
+    min-height: 200px;
+    border: 2px solid red;
+}
+
+.exercices {
+    grid-area: exercices;
+    min-width: 100%;
+    min-height: 200px;
+    border: 2px solid red;
+}
+
+.nav2 {
+    grid-area: nav2;
+    min-width: 100%;
+    min-height: 200px;
+    border: 2px solid red;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+        "nav1"
+        "exercices "
+        "nav2 ";
+}
+
+
+
+/* Ejercicio 1 */
+
+.exercise-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bordered-img {
+    width: 50vh;
+    margin-top: 2rem;
+}

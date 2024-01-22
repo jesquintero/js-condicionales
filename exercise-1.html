@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <div class="exercise-1">
+        <img class="bordered-img" src="assets/img/exercise-1/techno-cat.jpg" alt="" onclick="
+            let image1 = document.querySelector('.bordered-img')    
+            let image1Style = window.getComputedStyle(image1);
+            let image1Border = String(image1Style.getPropertyValue('border'));
+            console.log(image1Border)
+            if (image1Border.includes('none')) {
+                image1.style.border = '2px solid red';
+            } else {
+                image1.style.border = 'none';
+            }
+        ">
+    </div>
+</body>
+</html>
