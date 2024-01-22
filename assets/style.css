@@ -83,3 +83,29 @@ main {
     align-items: center;
     flex-direction: column;
 }
+
+/* Ejercicio 3 */
+.exercise-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.passInput {
+    height: 50px;
+    font-size: 45px;
+    width: 50px;
+}
+
+#passInfo {
+    margin: 10px;
+}
+
+.ingress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
