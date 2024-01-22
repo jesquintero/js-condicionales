@@ -71,3 +71,15 @@ main {
     border: 1px solid var(--gray-color);
     font-weight: 500;
 }
+
+.title {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.information, .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
